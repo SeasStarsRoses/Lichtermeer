@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lichtermeer</title>
         <style>
-            h1 {text-align: center;}
-            h2 {text-align: center;}
-            p {text-align: center;}
+            h1 {
+                text-align: center;
+                color: white;
+            }
+            h2 {
+                text-align: center;
+                color: white;
+            }
+            p {
+                text-align: center;
+                color: white;
+                margin-top: 20px;
+                font-weight: bold;
+            }
         </style>
     </head>
 
     <body>
-        <h1> 
-            <font style="color: red">L</font>
-            <font style="color: green">i</font>
-            <font style="color: #FFD700;">c</font>
-            <font style="color: red">h</font>
-            <font style="color: green">t</font>
-            <font style="color: #FFD700;">e</font>
-            <font style="color: red">r</font>
-            <font style="color: green">m</font>
-            <font style="color: #FFD700;">e</font>
-            <font style="color: red">e</font>
-            <font style="color: green">r</font>
-            <font style="color: #FFD700;"></font>
-        </h1>
-        <p><b>Frohe Weihnachten und ein gutes Neues Jahr f&uuml;r Euch und Eure Familien!</b></p>        
-
-        <h2><a href="https://www.friedenslicht.de/">Das Friedenslicht aus Bethlehem</a></h2>
+        <h1>L&nbsp;i&nbsp;c&nbsp;h&nbsp;t&nbsp;e&nbsp;r&nbsp;m&nbsp;e&nbsp;e&nbsp;r</h1>
+        <p><b>Ein gutes Neues Jahr 2024 f&uuml;r Euch und Eure Familien!</b></p>        
 
         <h2>Mache dich auf und werde Licht</h2>
         <p>
@@ -56,13 +53,33 @@
 
         <h2>Lichtermeer</h2>
         <p>&Uuml;ber die App &bdquo;wePix arena&ldquo; k&ouml;nnt ihr euer Handy zum Lichtermeer machen! Siehe <a href="./app/app.html">Anleitung</a></p>
-        <p>Oder per Web Seite in allen Farben als <b><a href="./lichter.html">Lichtermeer</a></b> oder per Hintergrundfarbe <a href="./rot.html">Rot</a>, <a href="./gruen.html">Gr&uuml;n</a>, bzw. <a href="./gold.html">Gold</a></p>
         <p>Oder mithilfe der Taschenlampenfunktion </p>
         <h2>QR-Code</h2>
         <p>Den Verweis (Link) auf diese Web Seite kannst Du einfach weitergeben per QR-Code:</p>
         <p><img src="pics/qr-code.png" alt="QR-Code"></p>
         <h2><a href="./hinweise/hinweise.html">Organisatorische Hinweise</a></h2>
-        <h2>Frohe Weihnachten und ein gutes Neues Jahr 2024!</h2>
+        <h2>Happy New Year 2024!</h2>
         <p><img src="pics/winter-3044939_1280.jpg" alt="https://pixabay.com/de/photos/winter-baum-natur-krippe-3044939/"></p>
+
+        <script>
+            var x = setInterval(function() {
+            
+             // Get today's date and time
+              var now = new Date();
+              var minutes = now.getMinutes();           
+              var times = 4;
+
+              if (minutes % times == 0) {
+                document.body.style.backgroundColor = "red";
+              } else if (minutes % times == 1) {
+                document.body.style.backgroundColor = "green";
+              } else if (minutes % times == 2){
+                document.body.style.backgroundColor = "gold";
+              } else {
+                document.body.style.backgroundColor = "blue";
+              }
+            
+            }, 1000);
+            </script>        
     </body> 
 </html>
